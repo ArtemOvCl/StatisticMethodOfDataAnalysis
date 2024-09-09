@@ -1,0 +1,71 @@
+.chartContainer {
+    grid-column: 1 / -1;
+    grid-row: 2 / 6;
+    background-color: #7B1B1C;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+      
+    .header {
+      color: #E5CFB8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #7B1B1C;
+      padding: 10px;
+
+      .chartSelector {
+        appearance: none;
+        width: 250px;
+        background: transparent;
+        outline: none;
+        border-radius: 10px;
+        border:2px solid #E5CFB8;
+        color: #E5CFB8;
+        cursor: pointer;
+        padding-left: 10px;
+        font-family:'Neutral Face';
+        font-size: 10px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:focus{
+            background-color: #E5CFB8;
+            color: #7B1B1C; 
+        }
+
+        option{
+            border-color: #E5CFB8;
+        }
+      }
+  
+      h1 {
+        margin: 0;
+      }
+  
+      select {
+        margin-right: 10px;
+        height: 30px;
+      }
+    }
+  
+    .canvasWrapper {
+      flex: 1; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; 
+
+      .chartImage{
+        fill:#E5CFB8;
+      }
+  
+      canvas {
+        width: 95%; 
+        height: 90%; 
+        border-radius: 20px;
+        display: block; 
+      }
+    }
+  }
+  
